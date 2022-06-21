@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+int main()
+{
+    char dizi[100],*pdizi,M;
+    
+
+    printf("metin giriniz:");
+    gets(dizi);
+
+    printf("Hangi harf kaldirilsin:");
+    scanf("%c",&M);
+
+    pdizi=dizi;
+    while(*pdizi)
+    {
+        if(*pdizi==M)
+            printf("");
+        else
+        printf("%c",*pdizi);
+        pdizi++;
+    }
+
+    return 0;
+}
+
